@@ -20,6 +20,11 @@ The following parameters can be modified in the func_body.pyx file:
   2. tau, gamma, alpha, delta, epsilonb
   3. teq - equilibrium temperature
   4. amp_noise - noise term constant
+
 Note: After modifying the func_body.pyx file, build the CPython module again using step (2)
 
-Every 100th frame is stored in an array and saved as a .npy file. The files are named Phase.npy and Temp.npy, corresponding to the phase and temperature fields. The frequency of the frames being stored can be modified in the func_body.pyx file and by changing the size of the temporary A and B arrays in the run.py file.
+Output:
+Every 100th frame is stored in an array and saved as a .npy file. The files are named Phase.npy and Temp.npy, corresponding to the phase and temperature fields. The files can be loaded using numpy.load for visualisation.
+
+Advantages:
+Due to the loops running at close to C like speeds, the speedup obtained by cythonising the main loop in the simulation is extremely high.
