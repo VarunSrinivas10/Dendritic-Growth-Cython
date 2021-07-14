@@ -7,7 +7,7 @@ Numpy and Cython
 To run the simulation:
   1. Place all three files in the same directory
   2. Run the following command: python3 setup.py build_ext --inplace 
-  3. This creates a CPython module of the func_body.pyx file, and only needs to be done once or if changes are made to the func_body.pyx file
+  3. This creates a CPython module of the func_body.pyx file
   4. Run the simulation using: python3 run.py
 
 The following parameters can be modified in the run.py file:
