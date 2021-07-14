@@ -25,6 +25,3 @@ Numpy and Cython
 
 ### Output:
 Every 100th frame is stored in an array and saved as a .npy file. The files are named Phase.npy and Temp.npy, corresponding to the phase and temperature fields. The files can be loaded using numpy.load() for visualisation.
-
-### Advantages:
-Due to the loops being optimised and running at close to C-like speeds, the speedup obtained by cythonising the main loop in the simulation is extremely high.
