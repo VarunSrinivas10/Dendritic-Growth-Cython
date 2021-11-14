@@ -1,4 +1,4 @@
-# Dendritic-Growth-Cython
+# Dendritic Growth Cython
 This repository contains a Cython implementation for dendritic crystal growth as proposed by Kobayashi in "Modeling and numerical simulations of dendritic crystal growth"
 
 ### Requirements:
